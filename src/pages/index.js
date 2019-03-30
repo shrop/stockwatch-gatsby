@@ -24,7 +24,7 @@ export const query = graphql`
   }
 `
 
-const HomePage = ({ data }) => (
+const IndexPage = ({ data }) => (
   <div>
     <h1>Stockwatch</h1>
     {data.allNodeBasicPage.edges.map(({ node }) => (
@@ -35,4 +35,4 @@ const HomePage = ({ data }) => (
     ))}
   </div>
 )
-export default HomePage
+export default IndexPage
